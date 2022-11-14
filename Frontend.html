@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="FrontendStyle.css" rel="stylesheet" type="text/css"/> 
+		<script type="text/javascript" src="check.js"> </script>
+	</head>
+	<body>
+		<h2> Welcome to Store! </h2>
+		<form action="backend.php" method="post" onsubmit="return check()">
+			<table border="1">
+			<tr>
+			<td colspan="2"> Username: <input type="text" id="username" name="username"> </td>
+			<td colspan="2"> Password: <input type="password" id="password" name="password"> </td>
+			</tr>
+			<tr>
+			<td colspan="3"> Amazon $1999.00 </td>
+			<td colspan="1"> Quantity: <input type="text" id="q0" name="q0"> </td>
+			</tr>
+			<tr>
+			<td colspan="3"> Windows $2655.00 </td>
+			<td colspan="1"> Quantity: <input type="text" id="q1" name="q1"> </td>
+			</tr>
+			<tr>
+			<td colspan="3"> Alphabet $3299.00 </td>
+			<td colspan="1"> Quantity: <input type="text" id="q2" name="q2"> </td>
+			</tr>
+			<tr> <td colspan="4">  
+				Shipping Method: 
+				<input type="radio" name="shipping" value="Free Seven Days" checked> Free Seven Days
+				<input type="radio" name="shipping" value="Three days"> $5.00 three day
+				<input type="radio" name="shipping" value="Over night"> $50.00 over night
+			</td> </tr>
+			<tr>
+			<td colspan="2"> <input type="reset"> </td>
+			<td colspan="2"> <input type="submit"> </td>
+			</tr>
+			
+			</table>
+		</form>
+	</body>
+</html>
